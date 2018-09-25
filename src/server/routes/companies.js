@@ -78,4 +78,26 @@ router.post(BASE_URL, async (ctx) => {
     }
 });
 
+// PUT, update, one company
+router.put(BASE_URL, async (ctx) => {
+  try {
+    const company = await queries.updateCompany(ctx.request.body);
+    if(company != null || company != undefined){
+      ctx.status = 201;
+      ctx.body = {
+        status: 'success',
+        data: company
+      };
+    }else{
+      ctx.status = 400;
+      ctx.body = {
+        status: 'error',
+        message: 'Something went wrong.'
+      };
+    }
+  } catch (e) {
+    console.log(err);
+  }
+});
+
 module.exports = router;

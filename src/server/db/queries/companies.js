@@ -28,9 +28,18 @@ function addCompany(company){
   return company;
 }
 
+function updateCompany(company){
+  // find company
+  let index = companies.findIndex( element =>  element.id === company.id);
+  companies[index] = company
+
+  return companies;
+}
+
 module.exports = {
   getAllCompanies,
   getSingleCompany,
   addCompany,
-  getSingleCompanyByEmail
+  getSingleCompanyByEmail,
+  updateCompany
 };

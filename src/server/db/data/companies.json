@@ -20,19 +20,19 @@
     },
     "users":[
       {
-        "firstName":"Logan",
-        "lastName":"Wolverine",
+        "firstName":"Test",
+        "lastName":"Owner",
         "role":"Owner",
         "userName":"loganwolverine",
-        "email": "loganwolverine@xmen.org",
+        "email": "test.owner@blue-river.com",
         "password":"******"
       },
       {
-        "firstName":"Wonder",
-        "lastName":"Wolverine",
+        "firstName":"Test",
+        "lastName":"User",
         "role":"User",
-        "userName":"wonderwolverine",
-        "email": "wonderwolverine@xmen.org",
+        "userName":"testuser",
+        "email": "test.user@blue-river.com",
         "password":"******"
       }
     ],
@@ -55,26 +55,26 @@
       "geo":{
         "lat": "-10.117047399999999",
         "lng": "39.7626105"
+      }
+    },
+    "users":[
+      {
+        "firstName":"Logan2",
+        "lastName":"Wolverine",
+        "role":"Owner",
+        "userName":"logan2wolverine",
+        "email": "logan2wolverine@xmen.org",
+        "password":"******"
       },
-      "users":[
-        {
-          "firstName":"Logan2",
-          "lastName":"Wolverine",
-          "role":"Owner",
-          "userName":"logan2wolverine",
-          "email": "logan2wolverine@xmen.org",
-          "password":"******"
-        },
-        {
-          "firstName":"Wonder",
-          "lastName":"Wolverine",
-          "role":"User",
-          "userName":"wonderwolverine",
-          "email": "wonderwolverine@xmen.org",
-          "password":"******"
-        }
-      ],
-      "products":[]
-    }
+      {
+        "firstName":"Wonder",
+        "lastName":"Wolverine",
+        "role":"User",
+        "userName":"wonderwolverine",
+        "email": "wonderwolverine@xmen.org",
+        "password":"******"
+      }
+    ],
+    "products":[]
   }
 ]

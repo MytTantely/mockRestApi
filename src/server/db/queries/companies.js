@@ -8,6 +8,21 @@ function getSingleCompany(id){
   return companies[id - 1];
 }
 
+function getSingleCompanyByEmail(emailId){
+  for(let i=0; i < companies.length; i++){
+    let company = companies[i];
+    let users = company.users;
+
+    for(let j=0; j < users.length; j++){
+      if(users[j].email === emailId){
+        return company;
+      }
+    }
+  }
+
+  return null;
+}
+
 function addCompany(company){
   companies.push(company);
   return company;
@@ -16,5 +31,6 @@ function addCompany(company){
 module.exports = {
   getAllCompanies,
   getSingleCompany,
-  addCompany
+  addCompany,
+  getSingleCompanyByEmail
 };
